@@ -5,3 +5,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',        [XlsxImportController::class, 'index'])->name('xlsx.index');
 Route::post('/upload', [XlsxImportController::class, 'upload'])->name('xlsx.upload');
+Route::get('/results', [XlsxImportController::class, 'results'])->name('xlsx.results');
